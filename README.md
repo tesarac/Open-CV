@@ -17,11 +17,9 @@ Mat rotate(Mat src, double angle)
 int main()
 {
 	Mat src = imread("C:\\Users\\User123\\Downloads\\yy.jpeg"); 
-
-	Mat dst;      //Mat object for output image file
+        Mat dst;      
 	dst = rotate(src, 30);      
-
-	imshow("src", src);       
+        imshow("src", src);       
 	imshow("dst", dst);        
 	waitKey(0);                   
 	return 0;
